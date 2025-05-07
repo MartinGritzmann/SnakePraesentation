@@ -163,7 +163,12 @@ public class GamePanel extends JPanel implements ActionListener {
 
 	public void checkApple() {
 
-		// Gruppe4
+		// Gruppe4 - fertig
+		if ((x[0] == appleX) && (y[0] == appleY)) {
+			bodyParts++;
+          		applesEaten++;
+			newApple();
+		}
 
 	}
 

@@ -1,3 +1,4 @@
+
 import java.awt.*;
 
 import java.awt.event.*;
@@ -108,7 +109,10 @@ public class GamePanel extends JPanel implements ActionListener {
 
 			FontMetrics metrics = getFontMetrics(g.getFont());
 
-			// Gruppe5
+			g.drawString("Score: " + applesEaten, (SCREEN_WIDTH - metrics.stringWidth("Score: " + applesEaten)) / 2,
+					g.getFont().getSize());
+
+
 		}
 
 		else {
